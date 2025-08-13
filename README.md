@@ -88,9 +88,8 @@ The project follows a modular architecture, with clear separation of concerns:
 
 ## Demo
 
-*(Include a GIF or video link here showing the chatbot in action)*
+<img width="1126" height="908" alt="image" src="https://github.com/user-attachments/assets/98e90852-3b48-4ba8-b06e-1828c8423b9f" />
 
-## Sample Queries & Outputs
 
-*(Include screenshots or text of sample queries and the chatbot's responses, highlighting both successful and failed cases)*
+
 
