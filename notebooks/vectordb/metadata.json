@@ -1,5 +1,5 @@
 {
   "embedding_model": "all-MiniLM-L6-v2",
-  "total_chunks": 314,
+  "total_chunks": 628,
   "embedding_dim": 384
 }

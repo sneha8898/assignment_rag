@@ -1,0 +1,116 @@
+{
+  "timestamp": "2025-08-14T00:56:36.741805",
+  "test_environment": {
+    "model_name": "llama-3.1-8b-instant",
+    "api_provider": "Groq",
+    "data_directory": "C:/Users/sneha/Downloads/assignment_rag-main/data",
+    "vector_store_path": "vectordb"
+  },
+  "knowledge_base_stats": {
+    "embedding_model": "all-MiniLM-L6-v2",
+    "total_chunks": 628,
+    "vector_store_loaded": true,
+    "embedding_dimension": 384,
+    "total_vectors": 628
+  },
+  "vector_search_results": {
+    "total_queries_tested": 10,
+    "queries_with_results": 10,
+    "average_similarity_score": 1.4557667016983031,
+    "score_statistics": {
+      "min": 1.2989907264709473,
+      "max": 1.577331781387329,
+      "mean": 1.4557667016983031,
+      "std": 0.09609199667637
+    }
+  },
+  "rag_pipeline_performance": {
+    "total_questions_tested": 5,
+    "successful_evaluations": 10,
+    "failed_evaluations": -5,
+    "timing_metrics": {
+      "avg_retrieval_time_seconds": 0.012252092361450195,
+      "avg_generation_time_seconds": 1.0311253309249877,
+      "avg_total_time_seconds": 1.043377423286438,
+      "min_total_time_seconds": 0.6222066879272461,
+      "max_total_time_seconds": 2.7517478466033936
+    },
+    "quality_metrics": {
+      "avg_retrieval_score": 1.4027520990371705,
+      "avg_chunks_retrieved": 5.0,
+      "avg_answer_length_chars": 1756.0
+    },
+    "category_performance": {
+      "Overview": {
+        "count": 2,
+        "avg_time_seconds": 0.8658946752548218,
+        "avg_retrieval_score": 1.332249689102173
+      },
+      "Summary": {
+        "count": 2,
+        "avg_time_seconds": 0.6392723321914673,
+        "avg_retrieval_score": 1.5251999378204346
+      },
+      "Details": {
+        "count": 2,
+        "avg_time_seconds": 0.7835483551025391,
+        "avg_retrieval_score": 1.461413359642029
+      },
+      "Application": {
+        "count": 2,
+        "avg_time_seconds": 1.2258274555206299,
+        "avg_retrieval_score": 1.3153663635253907
+      },
+      "Analysis": {
+        "count": 2,
+        "avg_time_seconds": 1.702344298362732,
+        "avg_retrieval_score": 1.3795311450958252
+      }
+    }
+  },
+  "parameter_optimization": {
+    "configurations_tested": 4,
+    "results": [
+      {
+        "config_name": "Conservative",
+        "max_chunks": 3,
+        "temperature": 0.0,
+        "response_time": 0.7916197776794434,
+        "avg_retrieval_score": 1.3224298159281414,
+        "chunks_retrieved": 3,
+        "answer_length": 1194,
+        "answer_preview": "The main topic of this document appears to be a User Agreement, specifically focusing on the terms and conditions related to arbitration, dispute reso..."
+      },
+      {
+        "config_name": "Balanced",
+        "max_chunks": 5,
+        "temperature": 0.1,
+        "response_time": 0.5773663520812988,
+        "avg_retrieval_score": 1.332249689102173,
+        "chunks_retrieved": 5,
+        "answer_length": 1228,
+        "answer_preview": "The main topic of this document appears to be a User Agreement, specifically outlining the terms and conditions of use for a particular platform or se..."
+      },
+      {
+        "config_name": "Creative",
+        "max_chunks": 7,
+        "temperature": 0.3,
+        "response_time": 0.5855841636657715,
+        "avg_retrieval_score": 1.3399019922528947,
+        "chunks_retrieved": 7,
+        "answer_length": 1163,
+        "answer_preview": "The main topic of this document appears to be a User Agreement, specifically outlining the terms and conditions of a service or platform. The agreemen..."
+      },
+      {
+        "config_name": "Comprehensive",
+        "max_chunks": 10,
+        "temperature": 0.0,
+        "response_time": 3.694133996963501,
+        "avg_retrieval_score": 1.3490328311920166,
+        "chunks_retrieved": 10,
+        "answer_length": 1267,
+        "answer_preview": "The main topic of this document appears to be a User Agreement, specifically outlining the terms and conditions of a service or platform. The agreemen..."
+      }
+    ]
+  }
+}
