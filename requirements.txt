@@ -1,0 +1,38 @@
+# Core dependencies
+streamlit
+langchain
+langchain-community
+langchain-groq
+langchain-text-splitters
+
+# Vector database and embeddings
+faiss-cpu
+chromadb
+sentence-transformers
+
+# Text processing
+nltk
+spacy
+pypdf
+python-docx
+beautifulsoup4
+
+# API clients
+groq
+openai
+
+# Data processing
+pandas
+numpy
+matplotlib
+seaborn
+
+# Utilities
+python-dotenv
+pydantic
+typing-extensions
+tqdm
+
+# Development
+jupyter
+notebook
