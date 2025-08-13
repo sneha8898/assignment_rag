@@ -39,7 +39,7 @@ class RAGPipeline:
         self.last_sources = []
         
         # Initialize Groq client
-        api_key = groq_api_key or os.getenv("GROQ_API_KEY") or "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"
+        api_key = groq_api_key or os.getenv("GROQ_API_KEY")
         if not api_key:
             raise ValueError("Groq API key is required. Set GROQ_API_KEY environment variable or pass it directly.")
         
