@@ -87,7 +87,11 @@ The project follows a modular architecture, with clear separation of concerns:
 -   **Embedding Model:** `all-MiniLM-L6-v2` is used for its balance of performance and efficiency in generating semantic embeddings.
 
 ## Demo
-
+-   **Images:** 
 <img width="1126" height="908" alt="image" src="https://github.com/user-attachments/assets/98e90852-3b48-4ba8-b06e-1828c8423b9f" />
 <img width="1918" height="972" alt="image" src="https://github.com/user-attachments/assets/3f9b8ca8-a875-40ac-afa9-9c5229db3a7b" />
 <img width="1913" height="972" alt="image" src="https://github.com/user-attachments/assets/c3eb6054-7a2b-405a-996c-11955b79f1d0" />
+
+-   **Video**
+ https://drive.google.com/file/d/1IwWZKqa-H1M_sBsiJvTEaAkTxalrY2e6/view?usp=sharing
+
