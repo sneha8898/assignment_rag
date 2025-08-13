@@ -112,8 +112,10 @@ class VectorStore:
         vector_store_path = os.path.join(self.vector_db_path, "faiss_index")
         self.vector_store.save_local(vector_store_path)
         
-        # Save chunks data separately
-        chunks_path = os.path.join(self.vector_db_path, "chunks_data.json")
+        # Save chunks data in chunks folder
+        chunks_dir = "chunks"
+        os.makedirs(chunks_dir, exist_ok=True)
+        chunks_path = os.path.join(chunks_dir, "chunks_data.json")
         with open(chunks_path, 'w', encoding='utf-8') as f:
             json.dump(self.chunks_data, f, indent=2, ensure_ascii=False)
         
@@ -138,7 +140,7 @@ class VectorStore:
         """
         try:
             vector_store_path = os.path.join(self.vector_db_path, "faiss_index")
-            chunks_path = os.path.join(self.vector_db_path, "chunks_data.json")
+            chunks_path = os.path.join("chunks", "chunks_data.json")
             
             if not os.path.exists(vector_store_path) or not os.path.exists(chunks_path):
                 print("Vector store files not found")

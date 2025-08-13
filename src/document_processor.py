@@ -225,14 +225,14 @@ class DocumentProcessor:
         """
         os.makedirs(output_dir, exist_ok=True)
         
-        output_file = os.path.join(output_dir, "processed_chunks.json")
+        output_file = os.path.join(output_dir, "chunks_data.json")
         
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(chunks, f, indent=2, ensure_ascii=False)
         
         print(f"Saved {len(chunks)} chunks to {output_file}")
     
-    def load_chunks(self, chunks_path: str = "chunks/processed_chunks.json") -> List[Dict[str, Any]]:
+    def load_chunks(self, chunks_path: str = "chunks/chunks_data.json") -> List[Dict[str, Any]]:
         """
         Load previously saved chunks
         

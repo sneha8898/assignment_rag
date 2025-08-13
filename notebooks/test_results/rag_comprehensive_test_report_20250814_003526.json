@@ -1,0 +1,116 @@
+{
+  "timestamp": "2025-08-14T00:35:26.266857",
+  "test_environment": {
+    "model_name": "llama-3.1-8b-instant",
+    "api_provider": "Groq",
+    "data_directory": "C:/Users/UdayGupta/rag-chatbot-project/data",
+    "vector_store_path": "vectordb"
+  },
+  "knowledge_base_stats": {
+    "embedding_model": "all-MiniLM-L6-v2",
+    "total_chunks": 314,
+    "vector_store_loaded": true,
+    "embedding_dimension": 384,
+    "total_vectors": 314
+  },
+  "vector_search_results": {
+    "total_queries_tested": 10,
+    "queries_with_results": 10,
+    "average_similarity_score": 1.4774922211964925,
+    "score_statistics": {
+      "min": 1.2989904880523682,
+      "max": 1.5861320495605469,
+      "mean": 1.4774922211964925,
+      "std": 0.09215024794936409
+    }
+  },
+  "rag_pipeline_performance": {
+    "total_questions_tested": 5,
+    "successful_evaluations": 5,
+    "failed_evaluations": 0,
+    "timing_metrics": {
+      "avg_retrieval_time_seconds": 0.03603453636169433,
+      "avg_generation_time_seconds": 0.8755395412445068,
+      "avg_total_time_seconds": 0.9115740776062011,
+      "min_total_time_seconds": 0.7751152515411377,
+      "max_total_time_seconds": 1.0989997386932373
+    },
+    "quality_metrics": {
+      "avg_retrieval_score": 1.4217055797576905,
+      "avg_chunks_retrieved": 5.0,
+      "avg_answer_length_chars": 1802.6
+    },
+    "category_performance": {
+      "Overview": {
+        "count": 1,
+        "avg_time_seconds": 1.0989997386932373,
+        "avg_retrieval_score": 1.3490329027175902
+      },
+      "Summary": {
+        "count": 1,
+        "avg_time_seconds": 0.7751152515411377,
+        "avg_retrieval_score": 1.536963129043579
+      },
+      "Details": {
+        "count": 1,
+        "avg_time_seconds": 0.8332011699676514,
+        "avg_retrieval_score": 1.4725143432617187
+      },
+      "Application": {
+        "count": 1,
+        "avg_time_seconds": 1.0693421363830566,
+        "avg_retrieval_score": 1.3547406673431397
+      },
+      "Analysis": {
+        "count": 1,
+        "avg_time_seconds": 0.7812120914459229,
+        "avg_retrieval_score": 1.3952768564224243
+      }
+    }
+  },
+  "parameter_optimization": {
+    "configurations_tested": 4,
+    "results": [
+      {
+        "config_name": "Conservative",
+        "max_chunks": 3,
+        "temperature": 0.0,
+        "response_time": 0.6827287673950195,
+        "avg_retrieval_score": 1.3354766368865967,
+        "chunks_retrieved": 3,
+        "answer_length": 1150,
+        "answer_preview": "The main topic of this document appears to be a User Agreement, specifically outlining the terms and conditions of use for a particular platform or se..."
+      },
+      {
+        "config_name": "Balanced",
+        "max_chunks": 5,
+        "temperature": 0.1,
+        "response_time": 0.5201938152313232,
+        "avg_retrieval_score": 1.3490329027175902,
+        "chunks_retrieved": 5,
+        "answer_length": 1200,
+        "answer_preview": "The main topic of this document appears to be a User Agreement, specifically outlining the terms and conditions of use for a particular platform or se..."
+      },
+      {
+        "config_name": "Creative",
+        "max_chunks": 7,
+        "temperature": 0.3,
+        "response_time": 0.4443624019622803,
+        "avg_retrieval_score": 1.3629281691142492,
+        "chunks_retrieved": 7,
+        "answer_length": 830,
+        "answer_preview": "The main topic of this document is the \"User Agreement\" between the user and the company providing payment services. This agreement outlines the terms..."
+      },
+      {
+        "config_name": "Comprehensive",
+        "max_chunks": 10,
+        "temperature": 0.0,
+        "response_time": 0.8399856090545654,
+        "avg_retrieval_score": 1.38784202337265,
+        "chunks_retrieved": 10,
+        "answer_length": 1339,
+        "answer_preview": "The main topic of this document appears to be a User Agreement, specifically outlining the terms and conditions of a service or platform. The agreemen..."
+      }
+    ]
+  }
+}
